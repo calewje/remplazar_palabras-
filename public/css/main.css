@@ -1,0 +1,355 @@
+body {
+    background-image: url('../img/shinobu.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Estilo para el título "Lista Animes" */
+#navbar_brand {
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    /* Ajusta el tamaño según lo necesites */
+    font-weight: bold;
+    color: #ffeb3b;
+    /* Un color amarillo similar al logo de Dragon Ball */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra para darle más impacto */
+}
+
+.gif {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    width: 55px;
+    height: auto;
+}
+
+/* Adorno card */
+.card {
+    background: linear-gradient(135deg, #2d3a9b5a, #7e48b3);
+    /* Gradiente azul a morado */
+    border-radius: 15px;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra para dar profundidad */
+}
+
+#contenido_infija {
+    color: #000000;
+    background-color: #21a3f474;
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #6e7e9c;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#tiempo_infija{
+    color: #000000;
+    background-color: #21a3f474;
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #6e7e9c;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#contenido_prefija {
+    color: #000000;
+    background-color: #21a3f474;
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #6e7e9c;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#tiempo_prefija{
+    color: #000000;
+    background-color: #21a3f474;
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #6e7e9c;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#contenido_postfija {
+    color: #000000;
+    background-color: #21a3f474;
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #6e7e9c;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#tiempo_postfija{
+    color: #000000;
+    background-color: #21a3f474;
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #6e7e9c;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#contenido_resultado {
+    color: #000000;
+    background-color: #21a3f474;
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #6e7e9c;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.table th {
+    font-family: 'Bangers', cursive;
+    font-size: 1.25rem;
+    color: #ffeb3b;
+    /* Amarillo brillante */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra para los títulos */
+}
+
+.table td {
+    font-size: 1.1rem;
+    color: white;
+    /* Color blanco para las celdas */
+}
+
+/* Fondo de la tabla con algo de transparencia */
+.table-hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Fondo semitransparente */
+    border-radius: 10px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Hover con un fondo más claro */
+}
+
+/* Ajustar la fuente en el contenido de la tarjeta */
+.content {
+    color: white;
+    /* Color blanco para el texto en la tarjeta */
+    font-size: 1.2rem;
+}
+
+.corner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.corner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.corner.top-left {
+    top: -10px;
+    left: -10px;
+}
+
+.corner.top-right {
+    top: -10px;
+    right: -10px;
+}
+
+.corner.bottom-left {
+    bottom: -10px;
+    left: -10px;
+}
+
+.corner.bottom-right {
+    bottom: -10px;
+    right: -10px;
+}
+
+.content {
+    text-align: center;
+}
+
+/* Tema del modal */
+/* Estilo para el tema azul oscuro y morado */
+.custom-theme {
+    background: linear-gradient(145deg, #1a1f3c, #2a2f56);
+    /* Azul oscuro a morado */
+    color: #f4f4f4;
+    /* Texto claro para contraste */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    /* Sombra más suave para el efecto de profundidad */
+    font-family: 'Arial', sans-serif;
+    /* Fuente estándar, puedes cambiarla si quieres */
+}
+
+/* Header del modal */
+.custom-theme .modal-header {
+    background: linear-gradient(145deg, #3c4f76, #515e88);
+    /* Azul más claro y morado */
+    border-bottom: 1px solid #444;
+    /* Borde fino para separar */
+    color: #f4f4f4;
+    /* Texto claro */
+    font-weight: bold;
+}
+
+/* Footer del modal */
+.custom-theme .modal-footer {
+    background: #2a2f56;
+    /* Fondo consistente con el cuerpo del modal */
+    border-top: 1px solid #444;
+    /* Separador */
+}
+
+/* Botón de cerrar */
+.custom-theme .btn-close {
+    background-color: transparent;
+    color: #f4f4f4;
+    filter: invert(1);
+}
+
+/* Estilo de botones */
+.custom-theme .btn-primary {
+    background-color: #5c6f9e;
+    /* Morado con un toque de azul */
+    border: 1px solid #4b5a77;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.custom-theme .btn-primary:hover {
+    background-color: #4b5a77;
+    /* Un tono más oscuro */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(91, 111, 158, 0.3);
+}
+
+/* Input y select con fondo oscuro */
+.custom-theme .form-control,
+.custom-theme .form-select {
+    background-color: #3a4750;
+    /* Azul oscuro */
+    color: #ffffff;
+    border: 1px solid #515e88;
+    /* Morado suave */
+}
+
+.custom-theme .form-control:focus,
+.custom-theme .form-select:focus {
+    box-shadow: 0 0 0 0.2rem rgba(85, 95, 121, 0.25);
+    /* Resalta al enfocarse */
+    border-color: #5c6f9e;
+}
+
+/* Efectos para cuando el modal está activo */
+.custom-theme .modal-content {
+    animation: fadeInModal 0.4s ease;
+}
+
+/* Animación para el modal */
+@keyframes fadeInModal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo de los inputs */
+input.form-control {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Fondo transparente para los inputs */
+    color: #000000;
+    /* Texto blanco dentro del input */
+    border: 2px solid #7e48b3;
+    /* Borde morado para los inputs */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+}
+
+/* Cuando el input está enfocado */
+input.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Fondo más claro al hacer focus */
+}
+
+/* Modificación del texto de los labels */
+label {
+    color: #ffeb3b;
+    /* Color amarillo para los labels */
+    font-weight: bold;
+    /* Resaltar el texto */
+}
+
+/* Estilo del botón */
+button#btn_login {
+    background-color: #7e48b3;
+    /* Fondo morado para el botón */
+    color: white;
+    /* Texto blanco */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 10px 20px;
+    /* Espaciado dentro del botón */
+    border: none;
+}
+
+button#btn_registro {
+    background-color: #5b2e88;
+    /* Fondo morado para el botón */
+    color: white;
+    /* Texto blanco */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 10px 20px;
+    /* Espaciado dentro del botón */
+    border: none;
+}
+
+button#btn_login:hover {
+    background-color: #ffeb3b;
+    /* Color amarillo cuando se pasa el ratón */
+    color: #2d3a9b;
+    /* Texto azul oscuro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil al pasar el mouse */
+}
+
+button#btn_registro:hover {
+    background-color: #ffeb3b;
+    /* Color amarillo cuando se pasa el ratón */
+    color: #2d3a9b;
+    /* Texto azul oscuro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil al pasar el mouse */
+}
+
+a.btn-link-danger:hover {
+    color: #2d3a9b;
+    /* Cambia el color del enlace al pasar el mouse */
+    text-decoration: underline;
+}

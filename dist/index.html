@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindromo</title>
+</head>
+
+<body>
+
+        <div class="container mt-4">
+            <h3 class="text-center mb-4" style="color: aliceblue;">Búsqueda y reemplazo de palabras</h3>
+
+            <label class="text-success">Ingresa tu texto:</label>
+            <textarea id="frase" class="form-control mb-2" rows="3" placeholder="Escribe tu frase aquí"></textarea>
+
+            <label class="text-success">Palabra a buscar:</label>
+            <input type="text" id="palabra" class="form-control mb-2" placeholder="Palabra a buscar">
+
+            <label class="text-success">Palabra de reemplazo (opcional):</label>
+            <input type="text" id="reemplazo" class="form-control mb-3" placeholder="Palabra nueva">
+
+            <button id="btn_busqueda" class="btn btn-info w-100 mb-3">Buscar y reemplazar</button>
+
+            <p id="contador" class="fw-bold text-light"></p>
+
+            <div class="border p-2 mb-3 bg-light">
+                <h5 class="text-primary">Texto original:</h5>
+                <p id="resultado_original" class="m-0"></p>
+            </div>
+
+            <div class="border p-2 mb-3 bg-light">
+                <h5 class="text-warning">Coincidencias encontradas:</h5>
+                <p id="resultado_encontrado" class="m-0"></p>
+            </div>
+
+            <div class="border p-2 mb-3 bg-light">
+                <h5 class="text-success">Texto modificado:</h5>
+                <p id="resultado_reemplazado" class="m-0"></p>
+            </div>
+        </div>
+
+
+    <script src="./bundle.js"></script>
+</body>
+
+</html>
